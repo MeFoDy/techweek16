@@ -415,6 +415,20 @@ body {
   webkit-tap-highlight-color: #222222;
 }
 
+.project-description-container {
+  padding: 0 10px;
+}
+
+.project-name {
+  margin-top: 0;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
 .project-description {
+  text-align: justify;
   font-size: 12px;
+}
+
+.dscr {
+  padding-top: 6px;
 }
