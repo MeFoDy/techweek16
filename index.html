@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 
@@ -22,16 +22,19 @@
     <!-- Plugin CSS -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
+    <link href="node_modules/flexboxgrid/css/flexboxgrid.min.css" rel="stylesheet">
+
     <!-- Theme CSS -->
     <link href="css/creative.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 
 <body id="page-top">
@@ -41,7 +44,7 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    <span class="sr-only">Toggle navigation</span> Меню <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">TechWeek'16</a>
             </div>
@@ -55,6 +58,12 @@
                     <li>
                         <a class="page-scroll" href="#services">Программа</a>
                     </li>
+                    <li>
+                        <a class="page-scroll" href="#contacts">Где и когда</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#reporters">Докладчики</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -67,7 +76,8 @@
             <div class="header-content-inner">
                 <h1 id="homeHeading">BSUIR TechWeek 2016</h1>
                 <hr>
-                <p>Неделя технологий БГУИР. Четыре дня, наполненных интересными докладами от специалистов ведущих IT-компаний страны. Веб-разработка, бизнес в IT, разработка мобильных приложений и многое другое. 24-29 октября.</p>
+                <p>Неделя технологий БГУИР. Четыре дня, наполненных интересными докладами от специалистов ведущих IT-компаний страны. Веб-разработка, бизнес в IT, разработка мобильных приложений и многое другое. </p>
+                <p>24-29 октября 2016 года.</p>
                 <a href="#services" class="btn btn-primary btn-xl page-scroll">Регистрация</a>
             </div>
         </div>
@@ -79,7 +89,7 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">О мероприятии</h2>
                     <hr class="light">
-                    <p class="text-faded">Неделя технологий БГУИР проходит уже 4й раз и неизменно собирает большое количество положительных отзывов. Мы всегда стараемся приглашать специалистов с наиболее актуальными темами, которые будут интересны и близки студентам.</p>
+                    <p class="text-faded">Неделя технологий БГУИР проходит уже в 4-ый раз и неизменно собирает большое количество положительных отзывов. Мы всегда стараемся приглашать специалистов с наиболее актуальными темами, которые будут интересны и близки студентам.</p>
                     <a target="_blank" href="http://fksis.bsuir.by/other-info/news/2015-12-01+news+techweek" class="page-scroll btn btn-default btn-xl sr-button">Как прошел TechWeek'15</a>
                 </div>
             </div>
@@ -87,17 +97,17 @@
     </section>
 
     <section id="services">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-xs-12 text-center">
                     <h2 class="section-heading">В программе</h2>
                     <hr class="primary">
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
+        <div class="container-fluid">
+            <div class="row center-xs around-xs">
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="service-box">
                         <i class="fa fa-4x fa-briefcase text-primary sr-icons"></i>
                         <h3>Business Day</h3>
@@ -105,7 +115,7 @@
                         <a target="_blank" style="margin-top: 20px" href="https://www.eventbrite.com/e/bsuir-techweek16-business-day-tickets-28703654403" class="btn btn-primary page-scroll">Регистрация</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="service-box">
                         <i class="fa fa-4x fa-mobile text-primary sr-icons"></i>
                         <h3>Mobile Day</h3>
@@ -113,7 +123,7 @@
                         <a target="_blank" style="margin-top: 20px" href="https://www.eventbrite.com/e/bsuir-techweek16-mobile-day-tickets-28703520001" class="btn btn-primary page-scroll">Регистрация</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="service-box">
                         <i class="fa fa-4x fa-laptop text-primary sr-icons"></i>
                         <h3>Development Day</h3>
@@ -121,11 +131,11 @@
                         <a target="_blank" style="margin-top: 20px" href="https://www.eventbrite.com/e/bsuir-techweek16-development-day-tickets-28703389611" class="btn btn-primary page-scroll">Регистрация</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-3 col-md-6 col-xs-12">
                     <div class="service-box">
                         <i class="fa fa-4x fa-firefox text-primary sr-icons"></i>
                         <h3>WebDev Day</h3>
-                        <p class="text-muted">В этот день поговорим о фронтенд и бэкенд разработке с использованием современных технологий</p>
+                        <p class="text-muted">В этот день поговорим о front- и backend разработке с использованием современных технологий</p>
                         <a target="_blank" style="margin-top: 20px" href="https://www.eventbrite.com/e/bsuir-techweek16-webdev-day-tickets-28703001450" class="btn btn-primary page-scroll">Регистрация</a>
                     </div>
                 </div>
@@ -134,9 +144,9 @@
     </section>
 
     <section class="no-padding" id="portfolio">
-        <div class="container-fluid">
+        <div class="container-fluid no-padding">
             <div class="row no-gutter popup-gallery">
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6 col-xs-12">
                     <a href="img/mobilep.jpg" class="portfolio-box">
                         <img src="img/mobilep.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
@@ -148,7 +158,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6 col-xs-12">
                     <a href="img/devp.jpg" class="portfolio-box">
                         <img src="img/devp.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
@@ -160,7 +170,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-4 col-sm-6 col-xs-12">
                     <a href="img/webp.jpg" class="portfolio-box">
                         <img src="img/webp.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
@@ -176,75 +186,150 @@
         </div>
     </section>
 
-    <section class="bg-primary" id="about1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
+    <section class="bg-primary" id="contacts">
+        <div class="container-fluid">
+            <div class="row around-xs">
+                <div class="col-lg-8 col-sm-10 col-xs-12 text-center">
                     <h2 class="section-heading">Где и когда</h2>
                     <hr class="light">
-                    <p class="text-faded">TechWeek пройдет в библиотеке 4-го корпуса БГУИР (ул. Гикало, 9, 104). Начало в 15:30. Лучше подходить зарание, чтобы успеть зарегистрироваться. Не забывайте приносить билеты (распечатывать не обязательно). Остались вопросы? Дополнительные подробности можно найти <a class="vk-link" href="https://vk.com/teamspark">в нашей группе ВКонтакте</a> </p>
+                    <p class="text-faded">TechWeek пройдет в библиотеке 4-го корпуса БГУИР (<b>ул. Гикало, 9, ауд.&nbsp;104</b>). Начало&nbsp;в&nbsp;<b>15:30</b>. Лучше подходить заранее, чтобы успеть зарегистрироваться. Не забывайте приносить билеты (распечатывать не обязательно).</p>
+                    <p class="text-faded">Остались вопросы? Дополнительные подробности можно найти в <a class="vk-link" href="https://vk.com/teamspark">нашей&nbsp;группе&nbsp;ВКонтакте</a>.</p>
                 </div>
+            </div>
+        </div>
+        <div class="container-fluid no-padding yandex-map-container">
+            <div class="yandex-map" id="map"></div>
+            <script type="text/javascript">
+                ymaps.ready(init);
+                var myMap, myPlacemark;
+
+                function init()
+                {     
+                    myMap = new ymaps.Map ("map", {
+                        center: [53.912134, 27.594842],
+                        zoom: 17,
+                        controls: ["zoomControl", "fullscreenControl"]
+                    });
+
+                    myPlacemark = new ymaps.Placemark([53.912134, 27.594842], { hintContent: 'БГУИР, 4 корпус', balloonContent: '<h4>БГУИР, 4 корпус</h4>Библиотека, ауд. 104' });
+                    myMap.geoObjects.add(myPlacemark);
+                    myMap.behaviors.disable('scrollZoom');
+                }
+            </script>
+        </div>
+    </section>
+
+    <section id="reporters">
+        <div class="container-fluid no-padding">
+            <div class="row around-xs">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-heading">Докладчики</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+            <div class="row no-gutter">
+                <div class="reporter col-lg-4 col-sm-6 col-xs-12 reporter-bessarab">
+                    <div class="reporter-container">
+                        <h4 class="reporter-name">
+                            Игорь Бессараб
+                        </h4>
+                        <p class="reporter-description text-faded">
+                            Обладает более чем двадцатилетним опытом работы в бизнесе.
+                            За свою карьеру был соучредителем двух успешных бизнесов, более десяти лет
+                            проработал в качестве независимого бизнес тренера, консультанта, коуча.
+                            Результатом работ стало успешное выведение на рынок бренда R-Style Lab, наработка целого ряда постоянных заказчиков
+                            с общей выручкой более 1 млн долларов в год.
+                        </p>
+                    </div>
+                </div>
+                <div class="reporter col-lg-4 col-sm-6 col-xs-12 reporter-zavadsky">
+                    <div class="reporter-container">
+                        <h4 class="reporter-name">
+                            Валентин Завадский
+                        </h4>
+                        <p class="reporter-description text-faded">
+                            Валентин Завадский - основатель компании <b>Rubyroid Labs</b>, один из лидеров сообщества <b>Minsk.rb</b> в Минске, соорганизатор Ruby Conference и просто хороший парень.
+                        </p>
+                    </div>
+                </div>
+                <div class="reporter col-lg-4 col-sm-6 col-xs-12 reporter-yukhnovich">
+                    <div class="reporter-container">
+                        <h4 class="reporter-name">
+                            Павел Юхнович
+                        </h4>
+                        <p class="reporter-description text-faded">
+                            Developer at Epam, VR Enthusiast, Public Speaker, Event Organizer, Traveler.<br><br>
+                            <b>Доклад:</b> VAMR is the next big thing.<br><br>
+                            Разберемся с непонятной аббревиатурой VAMR, посмотрим, что на самом деле сейчас происходит в мире дополненной реальности, и узнаем, почему нам стоит быть готовыми к грядущей VRеволюции.
+                        </p>
+                    </div>
+                </div>
+                <div class="reporter col-lg-4 col-sm-6 col-xs-12 reporter-vasilevsky">
+                    <div class="reporter-container">
+                        <h4 class="reporter-name">
+                            Юрий Василевский
+                        </h4>
+                        <p class="reporter-description text-faded">
+                            Руководитель группы мобильной разработки компании Яндекс.<br><br>
+                            <b>WorkShop</b> "Мобильная разработка в Яндексе (серия вопросов-ответов)".
+                        </p>
+                    </div>
+                </div>
+                <div class="reporter col-lg-4 col-sm-6 col-xs-12 reporter-sachok">
+                    <div class="reporter-container">
+                        <h4 class="reporter-name">
+                            Илья Сачок
+                        </h4>
+                        <p class="reporter-description text-faded">
+                            Фронт-энд разработчик в компании Viber.<br><br>
+                            Не раз выступал спикером на конференциях и митапах профессионального сообщества Rolling Scopes. Любит React и музыку, увлекается мобильной разработкой. Следит за развитием React Native с самого его анонса.<br><br>
+                            <b>Доклад:</b> "React Native: использование современных web-технологий в мобильной разработке."
+                        </p>
+                    </div>
+                </div>
+                <div class="reporter col-lg-4 col-sm-6 col-xs-12 reporter-ribak">
+                    <div class="reporter-container">
+                        <h4 class="reporter-name">
+                            Александр Скачко, <br>Валерия Рыбак
+                        </h4>
+                        <p class="reporter-description text-faded">
+                            Александр Скачко, Ruby разработчик, Itransition. Ruby и linux евангелист. Выпускник кафедры Информатики 2013 года.<br><br>
+                            Валерия Рыбак. Ruby разработчик, Itransition. Свидетель Ruby on Rails. Имеет опыт работы с .NET. Выпускница кафедры Информатики 2015 года.<br><br>
+                            <b>Доклад:</b> "Ruby делает тебя счастливее".
+                        </p>
+                    </div>
+                </div>
+                <div class="reporter col-lg-4 col-sm-6 col-xs-12 reporter-shandrakov">
+                    <div class="reporter-container">
+                        <h4 class="reporter-name">
+                            Артем Шандраков
+                        </h4>
+                        <p class="reporter-description text-faded">
+                            Разработчик PIQ
+                        </p>
+                    </div>
+                </div>
+                <div class="reporter col-lg-4 col-sm-6 col-xs-12 reporter-iscorceva">
+                    <div class="reporter-container">
+                        <h4 class="reporter-name">
+                            Наталья Искорцева
+                        </h4>
+                        <p class="reporter-description text-faded">
+                            Project Manager в компании Qulix Systems, руководитель тренингового центра для ИТ-специалистов www.tc-iskra.by, с 2009 года руководитель Белорусской Национальной Коллегии Тестировщиков BYSTQB.<br><br>
+                            <b>Доклад:</b> "Сертификация ISTQB: от начала до наших дней."
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section id="contact">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Докладчики</h2>
-                    <hr class="primary">
-                    <div class="row dscr no-gutter popup-gallery">
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                            <a href="img/igor.jpg" class="portfolio-box">
-                                <img src="img/igor.jpg" class="img-responsive" alt="">
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div>
-                                <div class="project-description-container">
-                                    <h4 class="project-name">
-                                        Игорь Бессараб
-                                    </h4>
-                                    <p class="project-description">
-                                        Игорь Бессараб обладает более чем двадцатилетним опытом работы в бизнесе.
-                                        За свою карьеру был соучредителем двух успешных бизнесов, более десяти лет
-                                        проработал в качестве независимого бизнес тренера, консультанта, коуча.
-                                        Последние 5 лет – это был опыт работы в IT бизнесе. За это время им пройден
-                                        путь от IT-рекрутера до директора компании R-Style Lab. Ему удалось собрать
-                                        команду из высоко квалифицированных специалистов и помимо устойчивой работы
-                                        на российском рынке совместно создать новое для компании направление бизнеса –
-                                        это работа на внешних рынках. Результатом работ в этом направлении стало успешное
-                                        выведение на рынок бренда R-Style Lab, наработка целого ряда постоянных заказчиков
-                                        с общей выручкой более 1 млн долларов в год.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row dscr no-gutter popup-gallery">
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div>
-                                <div class="project-description-container">
-                                    <h4 class="project-name">
-                                        Валентин Завадский
-                                    </h4>
-                                    <p class="project-description">
-                                        Валентин Завадский - основатель компании Rubyroid Labs, один из лидеров сообщества Minsk.rb в Минске, соорганизатор Ruby Conference и просто хороший парень.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                            <a href="img/valik.jpg" class="portfolio-box">
-                                <img src="img/valik.jpg" class="img-responsive" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <footer class="bg-primary text-center">
+        <p class="text-faded">
+            <a href="http://fksis.bsuir.by" class="vk-link" target="_blank">Факультет компьютерных систем и сетей БГУИР</a>, 2016
+        </p>
+    </footer>
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
