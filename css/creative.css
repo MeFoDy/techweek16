@@ -200,6 +200,12 @@ header {
     color: white;
 }
 
+@media (max-width: 991px) {
+    header {
+        background-attachment: scroll;
+    }
+}
+
 header .header-content {
     position: relative;
     text-align: center;
