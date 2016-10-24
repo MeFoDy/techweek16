@@ -11,6 +11,7 @@ body {
 
 body {
     font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+    overflow-x: hidden;
 }
 
 hr {
@@ -664,4 +665,16 @@ footer .logos img {
 
 .reporter-tkachenko {
     background-image: url("../img/reporters/tkachenko.jpg");
+}
+
+.reporter-varabei {
+    background-image: url("../img/reporters/varabei.jpg");
+}
+
+.reporter-biyanov {
+    background-image: url("../img/reporters/biyanov.jpg");
+}
+
+.reporter-bosenko {
+    background-image: url("../img/reporters/bosenko.jpg");
 }
